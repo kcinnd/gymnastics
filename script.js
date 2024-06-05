@@ -30,11 +30,15 @@ function validateSequence() {
         if (JSON.stringify(moves) === JSON.stringify(correctSequence)) {
             messageBox.textContent = 'PERFECT';
             messageBox.className = 'message correct';
+            sequenceContainer.className = 'sequence-container correct';
         } else {
             messageBox.textContent = 'The sequence is not valid. Try again!';
             messageBox.className = 'message incorrect';
+            sequenceContainer.className = 'sequence-container incorrect';
         }
     } else {
         messageBox.textContent = '';
+        sequenceContainer.className = 'sequence-container';
     }
 }
+
