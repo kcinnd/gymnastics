@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gymnastics Routine Puzzle</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Arrange the Gymnastics Moves</h1>
+        <div class="moves-container">
+            <div class="move" draggable="true" data-move="F">Flip (F)</div>
+            <div class="move" draggable="true" data-move="H">Handstand (H)</div>
+            <div class="move" draggable="true" data-move="S">Split (S)</div>
+            <div class="move" draggable="true" data-move="C">Cartwheel (C)</div>
+            <div class="move" draggable="true" data-move="T">Tumble (T)</div>
+            <div class="move" draggable="true" data-move="W">Twist (W)</div>
+        </div>
+        <div class="sequence-container" id="sequence">
+            <p>Drop moves here to form the routine:</p>
+        </div>
+        <div class="message" id="message"></div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
